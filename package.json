@@ -1,10 +1,10 @@
 {
-  "name": "vidbingemeta",
-  "version": "1.0.0",
+  "name": "mw-meta",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js"
   },
   "keywords": [],
   "author": "",

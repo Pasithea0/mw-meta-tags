@@ -36,12 +36,12 @@ app.get('/media/:type(tmdb-tv|tmdb-movie)-:id-:title/:seasonID?/:episodeID?', as
             mediaTitle = mediaTitle.substring(0, 22) + '...';
         }
 
-        const metaTags = `<!DOCTYPE html><html><head><title>${mediaTitle} | Vid Binge - Stream Your Favorite Movies & TV Shows For Free</title>
-<meta property="og:title" content="${mediaTitle} | Vid Binge - Stream Movies & TV Shows For Free" />
+        const metaTags = `<!DOCTYPE html><html><head><title>${mediaTitle} | P-Stream - Stream Your Favorite Movies & TV Shows For Free</title>
+<meta property="og:title" content="${mediaTitle} | P-Stream - Stream Movies & TV Shows For Free" />
 <meta property="og:description" content="${media.overview}" />
 <meta property="og:image" content="https://image.tmdb.org/t/p/original${media.backdrop_path}" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="${mediaTitle} | Vid Binge - Stream Movies & TV Shows For Free" />
+<meta name="twitter:title" content="${mediaTitle} | P-Stream - Stream Movies & TV Shows For Free" />
 <meta name="twitter:description" content="${media.overview}" />
 <meta name="twitter:image" content="https://image.tmdb.org/t/p/original${media.backdrop_path}" /></head><body>If you're seeing this, you might be a bot. If you want to see the real site, make sure you set your user agent back to normal and re-visit the website to watch content.</body><html>`;
 
