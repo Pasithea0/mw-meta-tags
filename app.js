@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // Updated route to capture optional season and episode IDs
 app.get('/media/:type(tmdb-tv|tmdb-movie)-:id-:title/:seasonID?/:episodeID?', async (req, res) => {
     const { type, id, title, seasonID, episodeID } = req.params;
-    const { watchparty } = req.query;
+    const watchparty = req.query.watchparty ? decodeURIComponent(req.query.watchparty.replace(/\+/g, ' ')) : null;
     const userAgent = req.headers['user-agent'];
     const agent = useragent.parse(userAgent);
 
