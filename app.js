@@ -39,7 +39,7 @@ app.get('/media/:type(tmdb-tv|tmdb-movie)-:id-:title/:seasonID?/:episodeID?', as
 
         let displayTitle = mediaTitle;
         if (watchparty) {
-            displayTitle = `You're being invited to "${watchparty}" to watch ${mediaTitle}`;
+            displayTitle = `You're being invited to ${watchparty} to watch ${mediaTitle}`;
         }
 
         const metaTags = `<!DOCTYPE html><html><head><title>${displayTitle} | ${MW_TITLE} - Stream Your Favorite Movies & TV Shows For Free</title>
